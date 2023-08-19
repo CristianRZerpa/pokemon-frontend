@@ -17,8 +17,7 @@ import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeIcon from '@mui/icons-material/Home';
 import PetsIcon from '@mui/icons-material/Pets';
-import SettingsIcon from '@mui/icons-material/Settings';
-import SupportIcon from '@mui/icons-material/Support';
+import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ThemeRegistry from '@/components/ThemeRegistry/ThemeRegistry';
 
@@ -35,6 +34,7 @@ const LINKS = [
   { text: 'Pokedex', href: '/pokedex', icon: CatchingPokemonIcon },
   { text: 'Mochila', href: '/bag', icon: BackpackIcon },
   { text: 'Mis Pokemón', href: '/pokemons', icon: PetsIcon },
+  { text: 'Batalla', href: '/battle', icon: NewReleasesIcon },
 ];
 
 const PLACEHOLDER_LINKS = [

@@ -1,23 +1,47 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
+import MediaCard from '@/components/MediaCard';
 
 export default function PokemonsPage() {
   return (
-    <Container>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Typography variant="body1" gutterBottom>
-          Mis Pokemon
-        </Typography>
+    <Box
+      sx={{
+        display: 'flex',
+      }}
+    >
+      <Box>
+        <Grid container rowSpacing={3} columnSpacing={3}>
+          <Grid xs={6}>
+            <MediaCard
+              img="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+              heading="Bulbasaur"
+              text="hp - defense - special-attack - special-defense - speed"
+            />
+          </Grid>
+          <Grid xs={6}>
+            <MediaCard
+              img="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+              heading="Ivysaur"
+              text="hp - defense - special-attack - special-defense - speed"
+            />
+          </Grid>
+          <Grid xs={6}>
+            <MediaCard
+              img="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+              heading="Venusaur"
+              text="hp - defense - special-attack - special-defense - speed"
+            />
+          </Grid>
+          <Grid xs={6}>
+            <MediaCard
+              img="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+              heading="Charmander"
+              text="hp - defense - special-attack - special-defense - speed"
+            />
+          </Grid>
+        </Grid>
       </Box>
-    </Container>
+    </Box>
   );
 }
